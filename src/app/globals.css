@@ -40,3 +40,494 @@ a {
     color-scheme: dark;
   }
 }
+
+.sign-up {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.6rem 1.5rem;
+  background-color: #16213e;
+}
+
+.sign-up button {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sign-up button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Movies page css */
+
+.movies-container {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  background: #1a1a2e;
+  min-height: 100vh;
+}
+
+.movies-container h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card span {
+  display: block;
+  padding: 10px;
+  font-weight: 700;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card .director {
+  display: block;
+  padding: 0 10px 10px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.card form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card button {
+  padding: 8px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: #764ba2;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-buttons a {
+  text-decoration: none;
+  flex: 1;
+}
+
+.details-button,
+.delete-button {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.details-button {
+  background: #667eea;
+  color: white;
+}
+
+.details-button:hover {
+  background: #764ba2;
+}
+
+.delete-button {
+  background: #ff6b6b;
+  color: white;
+}
+
+.delete-button:hover {
+  background: #ee5a52;
+}
+
+/* home css*/
+
+.movies-button {
+  margin-top: 20px;
+  display: block;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #c3b0b0;
+  cursor: pointer;
+}
+
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #16213e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  max-width: 700px;
+  color: white;
+padding-bottom: 60px;
+margin: 20px;}
+
+.header h1 {
+
+  margin-bottom: 20px;
+}
+
+/* navbar*/
+
+nav {
+  display: flex;
+  gap: 1.5rem; 
+  background-color: #8eb5f0; 
+  padding: 0.6rem;
+  justify-content: center; 
+  font-family: 'Arial', sans-serif;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: #00b7ff; 
+  color: #000;
+}
+
+nav a.active {
+  background-color: #ff30ff; 
+  color: #000;
+}
+
+/* movie detials */
+
+.movie-details-container {
+    color: #ebe4e4;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #16213e 100%);
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.movie-details-container img {
+  max-width: 100%;   
+  max-height: 400px; 
+  height: auto;      
+  object-fit: contain; 
+  border-radius: 12px; 
+  display: block;
+  margin: 1rem auto; 
+}
+
+
+/* comments */
+
+.add-comment-form form {
+  margin:20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-left: 50px;
+  justify-content:flex-start;
+}
+
+.add-comment-form label {
+  display: none;
+}
+
+
+.add-comment-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: auto;
+  max-width: 600px;
+  flex: 1;
+}
+
+.add-comment-form button {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.comments-list {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-item {
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.comment-date {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* add movies*/ 
+
+.add-movie-container { display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;}
+
+.add-movie-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.add-movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  
+}
+
+.add-movie-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+.add-movie-form textarea {
+  min-height: 80px;
+}
+
+.add-movie-form button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-container {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #16213e 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: white;
+}
+
+/* profile page*/
+ 
+.profile-header {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+ 
+.profile-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+ 
+.profile-text p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+ 
+.comments-number {
+  text-align: center;
+  background: rgba(102, 126, 234, 0.2);
+  border-radius: 12px;
+  padding: 16px 24px;
+}
+ 
+.comments-number span:first-child {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+}
+ 
+.comments-number span:last-child {
+  font-size: 0.85rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+ 
+.profile-activity {
+  max-width: 700px;
+  margin: 0 auto;
+}
+ 
+.profile-activity h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #ccc;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 10px;
+}
+ 
+.activity-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 14px;
+  transition: background 0.2s ease;
+}
+ 
+.activity-item:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+ 
+.activity-item strong {
+  color: #667eea;
+  font-size: 0.95rem;
+}
+ 
+.activity-item p {
+  margin-top: 6px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+ 
+.no-activity {
+  color: #666;
+  font-style: italic;
+}
+
+/*new user form*/
+.new-user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #16213e 100%);
+  padding: 20px;
+}
+ 
+.new-user-container h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+ 
+.new-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+}
+ 
+.new-user-form input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 0.95rem;
+}
+ 
+.new-user-form input::placeholder {
+  color: #888;
+}
+ 
+.new-user-form button {
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+ 
+.new-user-form button:hover {
+  background: #764ba2;
+}
